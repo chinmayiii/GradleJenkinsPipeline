@@ -29,5 +29,12 @@ pipeline {
         failure {
             echo 'Build Failed'
         }
+    }post {
+        success {
+            echo 'Build and deployment successful!'
+        }
+        failure {
+            echo 'Build failed!'
+        }
     }
 }
